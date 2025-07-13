@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <div id="question-container" class="fade-in">
+      <h2 id="question">Loading question...</h2>
+      <ul id="choices"></ul>
+    </div>
+    <button id="next-btn" class="btn">Next</button>
+  </div>
+
+  <div class="score-container hidden" id="score-card">
+    <h2 id="score-message"></h2>
+    <h3>Your Score: <span id="final-score"></span>/5</h3>
+    <canvas id="confetti-canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

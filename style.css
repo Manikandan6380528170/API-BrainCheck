@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.quiz-container, .score-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: slideIn 1s ease;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 12px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  background: #0072ff;
+  transform: scale(1.05);
+}
+
+.choice {
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.choice:hover {
+  background: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
